@@ -101,9 +101,19 @@ var ClockPage = React.createClass({
         }
     },
 
-    handleSecret: function() {
+    getBreakName: function() {
+        if (this.state.isBreak) {
+            return 'fa fa-briefcase';
+        } else {
+            return 'fa fa-coffee';
+        }
+    },
+
+    handleBreak: function() {
         this.setState({
-            time: 5000
+            isBreak: !this.state.isBreak, 
+            maxtime: this.getMaxTime(!this.state.isBreak),
+            time: this.getMaxTime(!this.state.isBreak),
         });
     },
 
@@ -120,7 +130,7 @@ var ClockPage = React.createClass({
                         <FloatingActionButton iconClassName="fa fa-refresh" iconStyle={{color: '#00bcd4'}} onClick={this.handleReset} />
                     </span>
                     <span className="item">
-                        <FloatingActionButton iconClassName="fa fa-user" iconStyle={{color: '#00bcd4'}} onClick={this.handleSecret} />
+                        <FloatingActionButton iconClassName={this.getBreakName()} iconStyle={{color: '#00bcd4'}} onClick={this.handleBreak} />
                     </span>
                 </div>
             </div>
