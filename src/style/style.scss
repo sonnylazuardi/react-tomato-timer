@@ -40,7 +40,7 @@ html, body {
         .full-page {
             display: flex;
             width: 100%;
-            height: 100%;
+            height: 90vh;
             flex-direction: row;
             align-items: center;
             
@@ -79,4 +79,8 @@ html, body {
     .item {
         margin: 10px;
     }
+}
+
+.padding {
+    padding: 20px;
 }

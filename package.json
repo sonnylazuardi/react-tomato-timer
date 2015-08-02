@@ -4,6 +4,7 @@
   "description": "simple pomodoro timer mobile app",
   "main": "webpack.config.js",
   "scripts": {
+    "cordova": "gulp initCordova",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
@@ -12,6 +13,7 @@
   "author": "sonny",
   "license": "mit",
   "dependencies": {
+    "cordova-android": "^4.1.0",
     "css-loader": "^0.15.1",
     "material-ui": "^0.9.2",
     "node-sass": "^3.2.0",
@@ -23,8 +25,16 @@
     "webpack": "^1.9.10"
   },
   "devDependencies": {
+    "chdir-promise": "^0.2.1",
+    "cordova-lib": "^5.1.1",
+    "del": "^1.2.0",
     "file-loader": "^0.8.4",
+    "gulp": "^3.9.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-run": "^1.6.10",
+    "gulp-webpack": "^1.5.0",
     "jsx-loader": "^0.13.2",
+    "run-sequence": "^1.1.2",
     "style-loader": "^0.12.3",
     "url-loader": "^0.5.6"
   }

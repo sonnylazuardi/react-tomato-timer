@@ -15,7 +15,7 @@ var Header = require('./header');
 var AboutPage = require('./about/aboutPage.jsx');
 var ClockPage = require('./clock/clockPage.jsx');
 
-require("./style.scss");
+require("../style/style.scss");
 
 injectTapEventPlugin();
 

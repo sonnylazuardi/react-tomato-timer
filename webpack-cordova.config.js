@@ -4,7 +4,7 @@ module.exports = {
 
   entry: './src/app/app.jsx',
   output: {
-    path: './build',
+    path: __dirname + '/build-cordova/www/assets',
     filename: 'app.js'
   },
   resolve: {

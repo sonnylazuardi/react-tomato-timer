@@ -15,14 +15,21 @@ var About = React.createClass({
     return (
       <div className="padding">
         <h1>
-          About Pomodoro Timer
+          About Tomato Timer
         </h1>
 
         <p>
-          The time management technique created by Francesco Cirillo for a  more productive way to work and study. For more information, click here.
+          The time management technique created by Francesco Cirillo for a more productive way to work and study. <a href="http://pomodorotechnique.com/">More ...</a>
         </p>
 
-        h1  
+        <ul>
+          <li>Decide on the task at hand</li>
+          <li>Set the Pomodoro (timer) to 25 minutes</li>
+          <li>Work on the task until the timer expires;</li>
+          <li>Take a Short Break (5 minutes)</li>
+        </ul>
+
+        
         <RaisedButton label="Back to clock" onClick={this.handleTransition} />
         <RaisedButton label="by @sonnylazuardi" href="http://sonnylab.com/"/>
       </div>
